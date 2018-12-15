@@ -13,10 +13,10 @@ const App = () => (
     <div className="container">
       <Header />
       <Switch>
-        <Route exact path={"/"} component={Home} />
         <Route path={"/about"} render={() => <About title={"Sup Homes"} />} />
         <Route path={"/teachers"} component={Teachers} />
         <Route path={"/courses"} component={Courses} />
+        <Route exact path={"/"} component={Home} />
         <Route component={NotFound} />
       </Switch>
     </div>
